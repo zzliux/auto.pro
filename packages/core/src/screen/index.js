@@ -155,7 +155,7 @@ export var enableScreenListener = function () {
     var filter = new android.content.IntentFilter();
     filter.addAction("android.intent.action.CONFIGURATION_CHANGED");
     var cw = new android.content.ContextWrapper(context);
-    var br = new android.content.BroadcastReceiver({
+    var br = new JavaAdapter(android.content.BroadcastReceiver, {
         onReceive: function () {
             screenDirectionSource.next(true);
         }

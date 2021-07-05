@@ -71,6 +71,6 @@ export declare function setSystemUiVisibility(type: VISIBILITY_TYPE): void;
  * 屏幕旋转事件，返回旋转后的屏幕类型
  * @returns {'横屏'|'竖屏'}
  */
-export declare const screenDirection$: Observable<"竖屏" | "横屏">;
+export declare const screenDirection$: Observable<ScreenType>;
 export declare const enableScreenListener: () => void;
 export {};
